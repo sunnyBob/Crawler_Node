@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="UTF-8">
+	<title>百思不得姐</title>
+	<link rel="stylesheet" href="style/mian.css">
+	<script type="text/javascript" src="./lib/jquery.min.js"></script>
+	<script type="text/javascript" src="./lib/mustache.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div class="top">
+			<img src="image/logo.png" alt="logo">
+			<div class="title">
+				视频小爬虫
+			</div>
+		</div>
+		<div class="body">
+			<input type="number" name="page" placeholder="输入要爬取前几页的内容">
+			<input type="button" name="crawler" value="释放爬虫">
+			<div id="video">
+			</div>
+		</div>
+	</div>
+	<script type="text/html" id="temp">
+		<div class="video-show">
+		{{#.}}
+			<a href="{{mp4}}" alt="视频">
+				<img src="{{poster}}" alt="poster" title="{{title}}">
+			</a>
+		{{/.}}
+		</div>
+	</script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
+
+

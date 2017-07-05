@@ -1,0 +1,101 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-size: 62.5%;
+}
+
+#container {
+	margin: 0 auto;
+	width: 60%;
+	position: absolute;
+	top: 0;
+	left: 20%;
+	bottom: 0;
+}
+
+.top {
+	background: #13F6B8;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	border-radius: 5px;
+}
+.top img {
+	margin: 0;
+	padding: 0;
+	opacity: 0.8;
+	vertical-align: middle;
+	border-radius: 5px;
+}
+div.title {
+	font-size: 2rem;
+	font-weight: bold;
+	margin-left: 20%;
+	line-height: 50px;
+	zoom: 1;
+	display: inline-block;
+}
+div.title:after {
+	content: '';
+	height: 0;
+	both: clear;
+	display: block;
+}
+.body {
+	border:1px solid #D7D2D2;
+	position: absolute;
+	top: 70px;
+	width: 100%;
+	bottom: 0px;
+}
+#video {
+	overflow-y: scroll;
+	height: 100%;
+	width: 100%;
+}
+.video-length {
+	position: absolute;
+	color: #FFFFFF;
+	background: #F94E02;
+	border-radius: 30%;
+	margin-top: 5px;
+
+}
+.video-show {
+	-moz-column-count:3; /* Firefox */
+	-webkit-column-count:3; /* Safari and Chrome */
+	column-count:3;
+	-moz-column-gap:3%; /* Firefox */
+	-webkit-column-gap:3%; /* Safari and Chrome */
+	column-gap:3%;
+	position: relative;
+	width: 100%;
+}
+.video-len {
+	position: absolute;
+	top：5px;
+}
+.video-show a {
+	font-size: 1.6rem;
+	height: 100%;
+}
+.video-show a:hover {
+	cursor: pointer;
+}
+.video-show img{
+	display: inline-block;
+}
+
+input[name=page]:hover {
+	border: 1px solid #0FFCDD;
+
+}
+input[name=crawler] {
+	margin-left: 10px;
+	border-radius: 5px;
+}
+input[name=crawler]:hover {
+	border-radius: 5px;
+	cursor: pointer;
+	background: #91FE8A;
+}
