@@ -1,10 +1,10 @@
 const startCrawler = require('../crawler/crawler')
 const removeDuplicate = require('../util/removeDuplicate.js')
-const videos = []
 const cheerio = require('cheerio')
 
 const handle = async (pageNum) => {
 	let url = 'http://www.budejie.com/'
+	let videos = []
 	for(let i = 0; i < pageNum; i++) {
 		let html = await startCrawler(url)
 		if(html!='') {
